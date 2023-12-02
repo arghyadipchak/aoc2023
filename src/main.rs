@@ -2,14 +2,14 @@ mod days;
 
 use std::fs;
 
-use days::AdventDay;
+const N: u8 = 1;
 
 fn read_input(n: u8) -> String {
   fs::read_to_string(format!("input/day{n}.txt")).unwrap_or_default()
 }
 
 fn main() {
-  for n in 1..=1 {
+  for n in 1..=N {
     let day = days::get_day(n, read_input(n));
 
     println!("--- Day {n}: {} ---", day.name());

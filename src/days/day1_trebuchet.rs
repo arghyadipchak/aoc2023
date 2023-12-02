@@ -15,7 +15,9 @@ pub struct Day1 {
 }
 
 impl AdventDay for Day1 {
-  const NAME: &'static str = "Trebuchet?!";
+  fn name(&self) -> &'static str {
+    "Trebuchet?!"
+  }
 
   fn part1(&self) -> String {
     self
