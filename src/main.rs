@@ -2,7 +2,7 @@ mod days;
 
 use std::fs;
 
-const N: u8 = 1;
+const N: u8 = 2;
 
 fn read_input(n: u8) -> String {
   fs::read_to_string(format!("input/day{n}.txt")).unwrap_or_default()
